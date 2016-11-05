@@ -40,3 +40,7 @@ tree.export_graphviz(clf,
 
 graph = pydotplus.graph_from_dot_data(dot_data.getvalue())
 graph.write_pdf("iris.pdf")
+
+#Use the decision tree manually
+print test_data[1], test_target[1]
+print iris.feature_names, iris.target_names
